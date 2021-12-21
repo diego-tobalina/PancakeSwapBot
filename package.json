@@ -1,0 +1,24 @@
+{
+  "name": "pancakeswap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "download_data": "ts-node src/download_data.ts",
+    "backtest": "ts-node src/backtest.ts",
+    "bot": "ts-node src/bot.ts",
+    "start": "ts-node src/bot.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.11.7",
+    "chartjs-to-image": "^1.0.4",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.5.1",
+    "telegraf": "^4.4.2"
+  }
+}
