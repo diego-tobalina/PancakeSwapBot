@@ -104,7 +104,7 @@ new Promise(async () => {
             bank -= fee;
             if (won) {
                 betAmount = initialBet;
-                claimRounds(BigNumber.from(lastBet.epoch));
+                claimRounds(epoch);
 
                 // TELEGRAM metadata
                 bank += amountIfWon;
