@@ -8,7 +8,7 @@ It works with PancakePredictionV2.
 
 ```
 1. Provide your private key to .env PRIVATE_KEY field
-2. Install dependencies npm i
+2. Install dependencies `npm i`
 4. Start the app with `npm run start`
 5. Enjoy winning!
 ```
@@ -18,7 +18,7 @@ It works with PancakePredictionV2.
 ````
 1. Update initialEpoch with the current epoch in pancake -5 (example: current epoch 25890 -> 25885)
 2. Update finalEpoch with the current epoch in pancake -500 (example: current epoch 25890 -> 25390)
-3. Install dependencies npm i
+3. Install dependencies `npm i`
 4. Run `npm run download_data` **not needed as this code contains history.json file
 5. Run `npm run backtest` 
 6. Open file chart.png
