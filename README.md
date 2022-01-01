@@ -35,6 +35,10 @@ The bot strategy can be found in [src/bot.ts](https://github.com/xBidi/PancakeSw
 
 `const bet = roundBullAmount < roundBearAmount ? 'bull' : 'bear';`
 
+To increase the bet the bot uses this strategy (check the .env to modify the multiplier)
+
+`https://en.wikipedia.org/wiki/Martingale_(probability_theory)`
+
 ### ⚠️ Beware of forks. I do not give any guarantee that the fork may turn out to be a scam.
 
 ### 💥 Disclaimer
