@@ -28,6 +28,13 @@ It works with PancakePredictionV2.
 ![alt PancakeSwap Prediction Bot-Winner Screenshot](images/ppw-image-2.png)
 ![alt Candle Genie Bot-Winner Screenshot](images/ppw-image-3.png)
 
+
+### Strategy
+
+The bot strategy can be found in [src/bot.ts](https://github.com/xBidi/PancakeSwapBot/blob/main/src/bot.ts#L73). It bets on the larger of the bull and bet payout.
+
+`const bet = roundBullAmount < roundBearAmount ? 'bull' : 'bear';`
+
 ### ⚠️ Beware of forks. I do not give any guarantee that the fork may turn out to be a scam.
 
 ### 💥 Disclaimer
