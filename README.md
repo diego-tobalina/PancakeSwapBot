@@ -31,11 +31,11 @@ It works with PancakePredictionV2.
 
 ### Strategy
 
-The bot strategy can be found in [src/bot.ts](https://github.com/xBidi/PancakeSwapBot/blob/main/src/bot.ts#L73). It bets on the larger of the bull and bet payout.
+The bot strategy can be found in [src/bot.ts](https://github.com/xBidi/PancakeSwapBot/blob/main/src/bot.ts#L73). It bets on the biggest of the bull or bear payout.
 
 `const bet = roundBullAmount < roundBearAmount ? 'bull' : 'bear';`
 
-To increase the bet the bot uses this strategy (check the .env to modify the multiplier)
+To increase the bet amount the bot uses this strategy (check the .env to modify the multiplier)
 
 `https://en.wikipedia.org/wiki/Martingale_(probability_theory)`
 
