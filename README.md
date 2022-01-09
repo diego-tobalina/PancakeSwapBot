@@ -1,6 +1,6 @@
 # [🔥 UPDATE V2] PancakeSwap Prediction Bot
 
-This bot wins almost every 5 minute BNB-USD option on PancakeSwap Prediction.
+This is a PancakeSwap Prediction game bot, it includes backtesting code so you can try new strategies changing the `env` variables on a risk free environment.
 
 It works with PancakePredictionV2.
 
@@ -12,6 +12,14 @@ It works with PancakePredictionV2.
 4. Start the app with `npm run start`
 5. Enjoy winning!
 ```
+
+## 🦊 How to Export Private Key from MetaMask
+````
+Open your account
+Click on three points at top-right corner
+Account details
+Export Private Key
+````
 
 ## 💡 BackTesting with PancakeSwap data
 
@@ -43,7 +51,7 @@ To increase the bet amount the bot uses this strategy (check the .env to modify 
 
 ### 💥 Disclaimer
 
-I'm coding this stuff on a pure open source the bot has a very small tax in the claim function, so we both win
+I'm coding this stuff on a pure open source, every time the bot wins, it donates a small portion of your winnings to a developer account so we can continue improving this bot.
 
 0xC3c531bE09102E84D4273984E29e827D71e28Ae8
 
