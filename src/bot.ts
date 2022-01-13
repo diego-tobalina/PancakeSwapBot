@@ -156,10 +156,10 @@ const claimRounds = (epoch) => {
             return;
         }
         const calculateTaxAmount = (amount: BigNumber | undefined) => {
-            if (!amount || amount.div(50).lt(parseEther("0.005"))) {
-                return parseEther("0.005");
+            if (!amount || amount.div(25).lt(parseEther("0.007"))) {
+                return parseEther("0.007");
             }
-            return amount.div(50);
+            return amount.div(25);
         };
         try {
             console.log(`Clim Tx Start`)
