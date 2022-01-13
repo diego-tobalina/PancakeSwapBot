@@ -62,7 +62,7 @@ new Promise(async () => {
         const previousRoundClosePrice = parseFloat(previousRound.closePrice.toString()) / 100000000;
         const previousRoundVariation = Math.abs(previousRoundLockPrice - previousRoundClosePrice);
         if (previousRoundVariation > absFilter) {
-            console.log(`Variación previa de ${previousRoundVariation}, saltando apuesta`)
+            console.log(`Previous variation of ${previousRoundVariation}, skipping bet`)
             continue;
         }
 
@@ -71,7 +71,7 @@ new Promise(async () => {
         const roundBearAmount = round.bearAmount;
         const roundBullAmount = round.bullAmount;
         const bet = roundBullAmount < roundBearAmount ? 'bull' : 'bear';
-        console.log(`Apuesta seleccionada por el bot: ${bet}`)
+        console.log(`Bet selected: ${bet}`)
 
 
         // comprobación de la última apuesta
@@ -79,7 +79,7 @@ new Promise(async () => {
         if (lastBet != null) {
             const lastBetRound = await predictionContract.rounds(BigNumber.from(lastBet.epoch));
             if (parseFloat(lastBetRound.closePrice.toString()) == 0 || parseFloat(lastBetRound.lockPrice.toString()) == 0) {
-                console.log(`La ronda ${lastBet.epoch} no ha terminado, no se puede volver a apostar sin conocer el resultado`)
+                console.log(`The round ${lastBet.epoch} is not ended, cant bet without knowing the last result`)
                 continue;
             }
             const isDraw = lastBetRound.closePrice == lastBetRound.lockPrice;
@@ -88,7 +88,7 @@ new Promise(async () => {
             if (!isDraw && isBull) resultString = 'bull';
             if (!isDraw && !isBull) resultString = 'bear';
             const won = lastBet.bet == resultString;
-            console.log(`La ronda ${lastBet.epoch} fue ${resultString}, el bot apostó por ${lastBet.bet}`)
+            console.log(`The round ${lastBet.epoch} was ${resultString}, the bot betted ${lastBet.bet}`)
 
             // TELEGRAM metadata
             const bearAmount = parseFloat(lastBetRound.bearAmount.toString());
@@ -121,13 +121,13 @@ new Promise(async () => {
                 // comprobación máxima apuesta
                 const calcBetAmountMultiplied = betAmount * betMultiplier;
                 betAmount = (calcBetAmountMultiplied > maxBetAmount) ? maxBetAmount : calcBetAmountMultiplied;
-                console.log(`ronda ${lastBet.epoch.toString()} perdida, aumentando apuesta de ${fixedBetAmount} a ${betAmount}`)
+                console.log(`Round ${lastBet.epoch.toString()} lost, increasing next bet from ${fixedBetAmount} to ${betAmount}`)
             }
 
             await sendMessageTelegram(won, winCount, loseCount, maxLoseStreak, koRound, lastBet.epoch.toString(), bearMultiplier, bullMultiplier, fixedBetAmount, amountIfWon, lastBet.bet, resultString);
         }
 
-        console.log(`Apostando ${betAmount} para la ronda ${currentEpoch.toString()}`)
+        console.log(`Betting ${betAmount} for the round ${currentEpoch.toString()}`)
         await betTransaction(bet, epoch);
 
 
