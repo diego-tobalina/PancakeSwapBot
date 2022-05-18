@@ -2,7 +2,7 @@
 
 This is a PancakeSwap Prediction game bot, it includes backtesting code so you can try new strategies changing the `env` variables on a risk free environment.
 
-It works with PancakePredictionV2.
+It works with PancakePredictionV2 (https://pancakeswap.finance/prediction)
 
 ## 💡 How to use
 
