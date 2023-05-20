@@ -1,5 +1,21 @@
 # [🔥 UPDATE V2] PancakeSwap Prediction Bot
 
+### ⚠️ Beware of forks. I do not give any guarantee that the fork may turn out to be a scam.
+
+### 💥 Disclaimer
+
+I'm coding this stuff on a pure open source, every time the bot wins, it donates a small portion of your winnings to a developer account so we can continue improving this bot.
+
+0xC3c531bE09102E84D4273984E29e827D71e28Ae8
+
+All investment strategies and investments involve risk of loss.
+**Nothing contained in this program, scripts, code or repository should be construed as investment advice.**
+Any reference to an investment's past or potential performance is not, and should not be construed as, a recommendation
+or as a guarantee of any specific outcome or profit. By using this program you accept all liabilities, and that no
+claims can be made against the developers or others connected with the program.
+
+## Info
+
 This is a PancakeSwap Prediction game bot, it includes backtesting code so you can try new strategies changing the `env` variables on a risk free environment.
 
 It works with PancakePredictionV2 (https://pancakeswap.finance/prediction)
@@ -46,18 +62,4 @@ The bot strategy can be found in [src/bot.ts](https://github.com/xBidi/PancakeSw
 To increase the bet amount the bot uses this strategy (check the .env to modify the multiplier and the initial bet amount)
 
 `https://en.wikipedia.org/wiki/Martingale_(probability_theory)`
-
-### ⚠️ Beware of forks. I do not give any guarantee that the fork may turn out to be a scam.
-
-### 💥 Disclaimer
-
-I'm coding this stuff on a pure open source, every time the bot wins, it donates a small portion of your winnings to a developer account so we can continue improving this bot.
-
-0xC3c531bE09102E84D4273984E29e827D71e28Ae8
-
-All investment strategies and investments involve risk of loss.
-**Nothing contained in this program, scripts, code or repository should be construed as investment advice.**
-Any reference to an investment's past or potential performance is not, and should not be construed as, a recommendation
-or as a guarantee of any specific outcome or profit. By using this program you accept all liabilities, and that no
-claims can be made against the developers or others connected with the program.
 
