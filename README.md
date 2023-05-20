@@ -8,6 +8,8 @@ I'm coding this stuff on a pure open source, every time the bot wins, it donates
 
 0xC3c531bE09102E84D4273984E29e827D71e28Ae8
 
+### [Donate with Trust Wallet](https://link.trustwallet.com/send?asset=c20000714&address=0xC3c531bE09102E84D4273984E29e827D71e28Ae8)
+
 All investment strategies and investments involve risk of loss.
 **Nothing contained in this program, scripts, code or repository should be construed as investment advice.**
 Any reference to an investment's past or potential performance is not, and should not be construed as, a recommendation
