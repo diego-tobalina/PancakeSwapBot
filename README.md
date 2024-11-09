@@ -59,7 +59,7 @@ Export Private Key
 
 ### Strategy
 
-The bot strategy can be found in [src/bot.ts](https://github.com/xBidi/PancakeSwapBot/blob/main/src/bot.ts#L73). It bets on the biggest of the bull or bear payout.
+The bot strategy can be found in [src/bot.ts](https://github.com/diego-tobalina/PancakeSwapBot/blob/main/src/bot.ts#L73). It bets on the biggest of the bull or bear payout.
 
 `const bet = roundBullAmount < roundBearAmount ? 'bull' : 'bear';`
 
