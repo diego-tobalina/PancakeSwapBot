@@ -56,7 +56,6 @@ Export Private Key
 ![alt PancakeSwap Prediction Bot-Winner Screenshot](images/ppw-image-2.png)
 ![alt Candle Genie Bot-Winner Screenshot](images/ppw-image-3.png)
 
-
 ### Strategy
 
 The bot strategy can be found in [src/bot.ts](https://github.com/diego-tobalina/PancakeSwapBot/blob/main/src/bot.ts#L73). It bets on the biggest of the bull or bear payout.
